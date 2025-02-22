@@ -1,9 +1,14 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import axios from "../config/axios";
 
 const Home = () => {
     const [date, setDate] = useState("");
+    const [data, setData] = useState(null);
+    const [error, setError] = useState(null);
     const inputRef = useRef(null);
+    const mainRef = useRef(null);
+    const responseRef = useRef(null);
 
     useEffect(() => {
         const bar = document.querySelector(".bar");
@@ -53,8 +58,19 @@ const Home = () => {
         setDate(e.target.value);
     };
 
-    const handleButtonClick = () => {
-        return inputRef.current.value;
+    const handleButtonClick = async () => {
+        try {
+            const response = await axios.get(`/ai/get-result?promt=${date}`);
+            setData(response.data);
+            setError(null);
+            mainRef.current.style.display = "none";
+            responseRef.current.style.display = "block";
+        } catch (error) {
+            setError(error.message);
+            setData(null);
+            mainRef.current.style.display = "block";
+            responseRef.current.style.display = "none";
+        }
     };
 
     return (
@@ -83,15 +99,13 @@ const Home = () => {
                         <div className="prf">
                             <img
                                 src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80"
-                                alt=""
-                            />
-                        </div>
+                                alt="" /></div>
                     </div>
                 </div>
             </nav>
             <main>
                 <section className="view-1">
-                    <div className="main">
+                    <div className="main" ref={mainRef}>
                         <div className="img">
                             <img
                                 src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80"
@@ -105,8 +119,54 @@ const Home = () => {
                                 onChange={handleInput}
                                 ref={inputRef}
                             />
-                            <button type="submit" onClick={handleButtonClick}>Send</button>
+                            <button onClick={handleButtonClick}>Send</button>
+                            {error && (
+                                <div
+                                    style={{
+                                        backgroundColor: "red",
+                                        padding: "10px",
+                                        borderRadius: "10px",
+                                        color: "white",
+                                        marginTop: "10px",
+                                    }}
+                                >
+                                    {error}
+                                </div>
+                            )}
+                            {data && (
+                                <div
+                                    style={{
+                                        backgroundColor: "green",
+                                        padding: "10px",
+                                        borderRadius: "10px",
+                                        color: "white",
+                                        marginTop: "10px",
+                                    }}
+                                >
+                                    {data}
+                                </div>
+                            )}
                         </div>
+                    </div>
+                </section>
+                <section className="response" ref={responseRef} style={{ display: "none" }}>
+                    <div className="resp" style={{ display: "flex", flexDirection: "column", padding: "20px" }}>
+                    <h1 style={{ marginBottom: "20px" }}>Response</h1>
+                    {data && (
+                        <p
+                            style={{
+                                whiteSpace: "pre-wrap",
+                                wordBreak: "break-word",
+                                fontSize: "1.2rem",
+                                fontFamily: "Arial, sans-serif",
+                                textAlign: "left",
+                                lineHeight: "1.5",
+                                fontWeight: 500,
+                                textAlign: "justify",
+                            }}
+                            dangerouslySetInnerHTML={{ __html: data.replace(/\*/g, "") }}
+                        />
+                    )}
                     </div>
                 </section>
             </main>
@@ -115,4 +175,5 @@ const Home = () => {
 };
 
 export default Home;
+
 
