@@ -1,7 +1,9 @@
 import React from "react";
 import { Route, BrowserRouter, Routes } from 'react-router-dom'
 import Home from "../screens/Home";
-import Profile from "..//screens/profile";
+
+
+
 
 function AppRoutes() {
     return (

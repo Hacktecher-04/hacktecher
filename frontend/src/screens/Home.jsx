@@ -108,7 +108,7 @@ const Home = () => {
                     <div className="main" ref={mainRef}>
                         <div className="img">
                             <img
-                                src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvc4TiGXVdvzTiQNSFA62y--ot4VdzHzFF_5tQOZEuV-Eu5hLq7RYbNuHihrXUpiSZQiM&usqp=CAU"
                                 alt="" /></div>
                         <div className="bottom">
                             <h1>Health Care</h1>
