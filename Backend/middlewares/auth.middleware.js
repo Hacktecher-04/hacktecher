@@ -6,7 +6,7 @@ module.exports.authUser = async(req, res, next) => {
     const token = req.cookies.token || req.headers.authorization.split(' ')[ 1 ];
     
     if(!token) {
-        return res.status(401).json({ message: 'Unauthorized 1' })
+        return res.status(401).json({ message: 'Unauthorized' })
     }
 
 
@@ -20,4 +20,4 @@ module.exports.authUser = async(req, res, next) => {
     } catch (err) {
         return re.status(401).json({ message: "Unauthorized 2" })
     }
-}
+}  
