@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import axios from "../config/axios";
+import Base from "../screens/Base";
 
 
 const ChatBot = () => {
@@ -75,8 +76,7 @@ const ChatBot = () => {
     };
 
     return (
-        <div className="container">
-            <Header />
+        <Base>
             <main>
                 <section className="view-1">
                     <div className="main" ref={mainRef}>
@@ -143,7 +143,7 @@ const ChatBot = () => {
                     </div>
                 </section>
             </main>
-        </div>
+        </Base>
     );
 };
 
