@@ -112,8 +112,8 @@ const Home = () => {
                                 alt="" /></div>
                         <div className="bottom">
                             <h1>Health Care</h1>
-                            <input
-                                type="search"
+                            <textarea
+                                type="Search"
                                 placeholder="Enter your text here"
                                 value={date}
                                 onChange={handleInput}

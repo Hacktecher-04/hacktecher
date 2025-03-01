@@ -1,17 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Bebas Neue", sans-serif;
+    color: #0e0e0e;
 }
 
 html,
 body {
     width: 100%;
     height: 100%;
-    background-color: #1f4E79;
     padding: 5px;
-    color: #f1f1f1;
 }
 
 .conainer {
@@ -47,7 +47,7 @@ nav {
 
                 a {
                     text-decoration: none;
-                    color: #f1f1f1;
+                    color: #0e0e0e;
                     font-size: 16px;
                     font-weight: 500;
                     transition: all 0.3s ease-in-out;
@@ -101,7 +101,6 @@ nav {
 .view-1 {
     width: 100%;
     display: flex;
-    background-color: #1f4E79;
     align-items: center;
     justify-content: center;
     .main {
@@ -146,10 +145,10 @@ nav {
             margin-bottom: 10px;
         }
 
-        input{
-            height: 40px;
-            width: 200px;
-            text-align: center;
+        textarea{
+            height: 200px;
+            width: 350px;
+            padding: 20px;
             border-radius: 30px;
         }
 
