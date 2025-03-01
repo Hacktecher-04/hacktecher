@@ -49,7 +49,6 @@ nav .nav ul li {
 }
 nav .nav ul li a {
   text-decoration: none;
-  color: #0e0e0e;
   font-size: 16px;
   font-weight: 500;
   transition: all 0.3s ease-in-out;
@@ -79,7 +78,7 @@ nav .nav .profile .prf img {
   display: block;
   width: 25px;
   height: 3px;
-  background-color: #f1f1f1;
+  background-color: #0e0e0e;
   margin: 5px 0;
   transition: all 0.3s ease-in-out;
 }
@@ -88,7 +87,7 @@ nav .nav .profile .prf img {
 }
 
 .active a {
-  color: #0e0e0e;
+  color: #f1f1f1;
 }
 
 .view-1 {
@@ -284,6 +283,9 @@ footer a {
   }
   li {
     margin: 10px 0;
+  }
+  li a {
+    color: #f1f1f1;
   }
   .active ul {
     left: 0;

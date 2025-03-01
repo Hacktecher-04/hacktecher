@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { gsap } from "gsap";
 
 
 const Base = ({ children }) => {
+    
     return (
         <div className="base">
             <Header />
@@ -13,6 +14,50 @@ const Base = ({ children }) => {
 }
 
 const Header = () => {
+    useEffect(() => {
+        const bar = document.querySelector(".bar");
+        const nav = document.querySelector("nav");
+        const logo = document.querySelector(".logo");
+        const prf = document.querySelector(".prf");
+
+        const handleBarClick = () => {
+            bar.classList.toggle("active");
+            nav.classList.toggle("active");
+            logo.classList.toggle("active");
+
+            if (bar.classList.contains("active")) {
+                gsap.to(".bar span", {
+                    backgroundColor: "#f1f1f1",
+                    rotate: 45,
+                    y: 4,
+                    duration: 0.5,
+                });
+                gsap.to(".bar span:nth-child(2)", {
+                    rotate: -45,
+                    y: -4,
+                    duration: 0.5,
+                });
+                gsap.to(".bar span:nth-child(3)", {
+                    opacity: 0,
+                    duration: 0.1,
+                });
+            } else {
+                gsap.to(".bar span", {
+                    rotate: 0,
+                    y: 0, // Reset y position
+                    opacity: 1,
+                    backgroundColor: "#000",
+                    duration: 0.5,
+                });
+            }
+        };
+
+        bar.addEventListener("click", handleBarClick);
+
+        return () => {
+            bar.removeEventListener("click", handleBarClick);
+        };
+    }, []);
     return (
         <header>
             <nav className="navbar">
