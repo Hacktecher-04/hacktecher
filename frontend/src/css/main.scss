@@ -103,6 +103,26 @@ nav {
     color: #f1f1f1;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 5px;
+    color: #f1f1f1;
+    font-size: 16px;
+    font-weight: 500;
+    gap: 10px;
+
+    a {
+        text-decoration: none;
+        color: #f1f1f1;
+        font-size: 16px;
+        font-weight: 500;
+        transition: all 0.3s ease-in-out;
+    }
+  }
+  
+
 @media screen and (max-width: 768px) {
 
     .bar {

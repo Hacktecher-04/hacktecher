@@ -66,11 +66,13 @@
   width: 100%;
   display: flex;
   aspect-ratio: 16/10;
+  gap: 1rem;
   overflow-x: auto;
 }
 .view-2 .img {
   background-color: #1e3a8a;
   animation: slide 15s infinite;
+  border-radius: 20px;
 }
 .view-2 .img-1 {
   background-image: url("images/view-2-1.png");
@@ -82,16 +84,17 @@
   align-items: end;
 }
 .view-2 .img-2 {
-  background-image: url("images/view-2-1.png");
+  background-image: url("images/view-2-2.png");
   background-size: cover;
   width: 100%;
   aspect-ratio: 16/8;
+  opacity: 0.9;
   padding: 2rem;
   display: flex;
   align-items: end;
 }
 .view-2 .img-3 {
-  background-image: url("images/view-2-1.png");
+  background-image: url("images/view-2-3.png");
   background-size: cover;
   width: 100%;
   aspect-ratio: 16/8;
@@ -100,7 +103,7 @@
   align-items: end;
 }
 .view-2 .img-4 {
-  background-image: url("images/view-2-1.png");
+  background-image: url("images/view-2-4.png");
   background-size: cover;
   width: 100%;
   padding: 2rem;
@@ -109,7 +112,7 @@
   align-items: end;
 }
 .view-2 .img-5 {
-  background-image: url("images/view-2-1.png");
+  background-image: url("images/view-2-5.png");
   background-size: cover;
   width: 100%;
   aspect-ratio: 16/8;
@@ -140,25 +143,22 @@
 }
 .view-3 {
   width: 100%;
-  background-image: linear-gradient(to right bottom, #e93f0b, #918d8d, #0bb43e);
+  background-color: #f1f1f1;
   display: flex;
   padding: 1.5rem;
   gap: 1.5rem;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 .view-3 .head {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: #918d8d;
-  align-items: center;
   margin-top: 10px;
 }
 .view-3 .head h1 {
   font-size: 4.5rem;
-  color: white;
+  color: #0e0e0e;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -167,7 +167,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: antiquewhite;
   align-items: center;
 }
 .view-3 .content .cont-1 {
@@ -295,7 +294,7 @@
   aspect-ratio: 4/4;
   width: 70%;
   background-color: #0e0e0e;
-  transform: rotate(135deg);
+  transform: rotate(-3deg);
   border-radius: 10px;
 }
 .view-6 .content {
@@ -323,6 +322,7 @@
   width: 150px;
   height: 40px;
   font-size: 1.3rem;
+  border-radius: 30px;
 }
 
 @media screen and (min-width: 768px) {

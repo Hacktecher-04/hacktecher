@@ -68,20 +68,20 @@ const Home = () => {
 
                 <section className="view-3">
                     <div className="head">
-                        <h1>5</h1>
+                        <h1>Your healthcare journey simplified</h1>
                     </div>
                     <div className="content">
                         <div className="cont-1">
-                            <img src="" alt="" />
-                            <h3>66</h3>
+                            <img src="src/assets/images/view-3-1.png" alt="" />
+                            <h3>Docter Apointment</h3>
                         </div>
                         <div className="cont-2">
-                            <img src="" alt="" />
-                            <h3>66</h3>
+                            <img src="src/assets/images/view-3-2.png" alt="" />
+                            <h3>Patient</h3>
                         </div>
                         <div className="cont-3">
-                            <img src="" alt="" />
-                            <h3>66</h3>
+                            <img src="src/assets/images/view-3-3.png" alt="" />
+                            <h3>Freshers & Students</h3>
                         </div>
                     </div>
                     <img className="img" src="" alt="" />
@@ -90,7 +90,7 @@ const Home = () => {
                 <section className="view-4"></section>
 
                 <section className="view-5">
-                <img src="" alt="" />
+                <img src="src/assets/images/chatbot.png" alt="" />
                     <div className="content">
                         <h1>Health Care</h1>
                         <p>Trusted care, healthier lives</p>
@@ -99,7 +99,7 @@ const Home = () => {
                 </section>
 
                 <section className="view-6">
-                    <img src="" alt="" />
+                    <img src="src/assets/images/Docter-view-6.png" alt="" />
                     <div className="content">
                         <h1>For login</h1>
                         <p>Trusted care, healthier lives</p>
