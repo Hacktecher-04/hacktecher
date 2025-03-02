@@ -27,3 +27,21 @@ html, body {
     align-items: center;
 }
 
+.view-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    .text {
+        font-size: 24px;
+        font-weight: 600;
+        flex: 1/2;
+    }
+
+    img{
+        width: 50%;
+        flex: 1/2;
+        ad
+    }
+}
