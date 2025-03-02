@@ -96,7 +96,7 @@ const Home = () => {
                     <div className="content">
                         <h1>Health Care</h1>
                         <p>Trusted care, healthier lives</p>
-                        <button>Get Started</button>
+                        <button onClick={() => {window.location.href = "/chatbot"}}>Get Started</button>
                     </div>
                 </section>
 

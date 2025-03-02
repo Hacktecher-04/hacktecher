@@ -15,12 +15,14 @@
   background-image: url("images/view-1.png");
   background-size: cover;
   display: flex;
+  overflow-y: hidden;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 .view-1 img {
-  aspect-ratio: 4/4;
+  aspect-ratio: 16/22;
+  margin-top: 10rem;
   width: 90%;
   opacity: 0;
   border-radius: 10px;
