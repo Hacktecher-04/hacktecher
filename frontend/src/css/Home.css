@@ -36,13 +36,13 @@
 }
 .view-1 .text h1 {
   font-size: 4.5rem;
-  color: #173077;
+  color: #0d225b;
   font-weight: 400;
   margin-bottom: 20px;
 }
 .view-1 .text p {
   font-size: 1.7rem;
-  color: #173077;
+  color: #14224c;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -330,7 +330,7 @@
     flex-direction: row-reverse;
   }
   .view-1 img {
-    width: 80%;
+    width: 60%;
     background-position: bottom;
   }
   .view-1 .text h1 {

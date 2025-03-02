@@ -1,8 +1,10 @@
 import React, { useEffect } from "react";
 import Base from "../screens/Base";
-import { gsap } from "gsap";
+import { gsap, ScrollTrigger } from "gsap/all";
 import "../css/home.css";
 
+
+gsap.registerPlugin(ScrollTrigger);
 
 const Home = () => {
 
@@ -13,6 +15,15 @@ const Home = () => {
         gsap.to(".view-1 img", { opacity: 1, duration: 1, delay: 0.5 });
         gsap.to(".view-1 .text", { opacity: 1, x:0, duration: 1, delay: 1 });
         gsap.to(".view-1 button", { opacity: 1, y:0, duration: 1, delay: 1.5 });
+        
+        gsap.from(".view-3 .head", { opacity: 0,y: -100, duration: 1, delay: 0.5 });
+        gsap.to(".view-3 .head", { opacity: 1, y:0, duration: 1, delay: 0.5 });
+
+        gsap.from(".view-3 .content", { opacity: 0,y: 100, duration: 1, delay: 1 });
+        gsap.to(".view-3 .content", { opacity: 1, y:0, duration: 1, delay: 1 });
+
+
+
     }, []);
 
     return (
