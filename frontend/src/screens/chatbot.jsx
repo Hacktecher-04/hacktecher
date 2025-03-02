@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import axios from "../config/axios";
 import Base from "../screens/Base";
+import "../css/chatbot.css";
 
 
 const ChatBot = () => {
