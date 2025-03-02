@@ -7,7 +7,12 @@ import "../css/home.css";
 const Home = () => {
 
     useEffect(() => {
-        window.scrollTo(0, 0);
+        gsap.from(".view-1 img", { opacity: 0, duration: 1, delay: 0.5 });
+        gsap.from(".view-1 .text", { opacity: 0,x:-200, duration: 1, delay: 1 });
+        gsap.from(".view-1 button", { opacity: 0,y: 100, duration: 1, delay: 1.5 });
+        gsap.to(".view-1 img", { opacity: 1, duration: 1, delay: 0.5 });
+        gsap.to(".view-1 .text", { opacity: 1, x:0, duration: 1, delay: 1 });
+        gsap.to(".view-1 button", { opacity: 1, y:0, duration: 1, delay: 1.5 });
     }, []);
 
     return (
