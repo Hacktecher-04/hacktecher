@@ -84,10 +84,12 @@ const Home = () => {
                             <h3>Freshers & Students</h3>
                         </div>
                     </div>
-                    <img className="img" src="" alt="" />
+                    <img className="img" src=" " alt="" />
                 </section>
                 
-                <section className="view-4"></section>
+                <section className="view-4">
+                    <p>"Good health and good sense are two of life’s greatest blessings"</p>
+                </section>
 
                 <section className="view-5">
                 <img src="src/assets/images/chatbot.png" alt="" />

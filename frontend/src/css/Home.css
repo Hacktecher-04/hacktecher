@@ -67,6 +67,7 @@
   display: flex;
   aspect-ratio: 16/10;
   gap: 1rem;
+  margin-top: 1rem;
   overflow-x: auto;
 }
 .view-2 .img {
@@ -226,13 +227,27 @@
 .view-3 .img {
   aspect-ratio: 4/2;
   width: 100%;
-  background-color: #0bb43e;
+  background-image: url("images/view-3-4.png");
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
 }
 
 .view-4 {
   width: 100%;
   aspect-ratio: 16/6;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.view-4 p {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #173077;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 
 .view-5 {
@@ -366,6 +381,9 @@
   .view-4 {
     aspect-ratio: 16/10;
   }
+  .view-4 p {
+    font-size: 4rem;
+  }
   .view-5 {
     padding: 10rem;
     flex-direction: row-reverse;
@@ -402,6 +420,9 @@
   }
   .view-4 {
     aspect-ratio: 16/6;
+  }
+  .view-4 p {
+    font-size: 6rem;
   }
   .view-5 {
     padding: 10rem;
