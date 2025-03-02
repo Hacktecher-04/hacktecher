@@ -38,7 +38,7 @@ const ChatBot = () => {
                     <div className="main" ref={mainRef}>
                         <div className="img">
                             <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvc4TiGXVdvzTiQNSFA62y--ot4VdzHzFF_5tQOZEuV-Eu5hLq7RYbNuHihrXUpiSZQiM&usqp=CAU"
+                                src="src/assets/images/chatbot.png"
                                 alt="" /></div>
                         <div className="bottom">
                             <h1>Health Care</h1>

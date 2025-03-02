@@ -1,6 +1,6 @@
 .view {
   width: 100%;
-  padding-top: 5rem;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@
   aspect-ratio: 4/4;
 }
 .view .main .img img {
-  width: 70%;
+  width: 90%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
