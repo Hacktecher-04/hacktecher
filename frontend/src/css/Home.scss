@@ -5,43 +5,28 @@
     font-family: "Bebas Neue", sans-serif;
 }
 
-html, body {
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-}
-
-.base {
+.view-1{
     height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.container{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+    background-image: url("src/assets/images/view-1.webp");
+    margin-top: 20px;
 
-.view-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    .text {
-        font-size: 24px;
-        font-weight: 600;
-        flex: 1/2;
+    img { 
+        width: 100%;
+        border-radius: 10px;
+        aspect-ratio: 4/4;
+        mix-blend-mode:darken;                        
     }
 
-    img{
-        width: 50%;
-        flex: 1/2;
-        ad
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
     }
 }
