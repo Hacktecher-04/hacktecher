@@ -154,7 +154,7 @@
     }
 
     100% {
-        transform: translateX(-390%);
+        transform: translateX(-370%);
     }
 
 }
@@ -278,7 +278,7 @@
 .view-5 {
     width: 100%;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     background-color: #0e0e0e;
     justify-content: center;
     align-items: center;
@@ -298,7 +298,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        padding: 3rem  0rem;
+        padding: 3rem 0rem;
         justify-content: center;
         align-items: center;
 
@@ -323,6 +323,57 @@
             font-size: 1.3rem;
         }
     }
+}
+
+.view-6 {
+    width: 100%;
+    aspect-ratio: 16/6;
+    padding: 1.5rem;
+    padding-top: 5rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem;
+
+    img {
+        aspect-ratio: 4/4;
+        width: 70%;
+        background-color: #0e0e0e;
+        transform: rotate(135deg);
+        border-radius: 10px;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0rem;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            font-size: 4.5rem;
+            color: #173077;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.7rem;
+            color: #173077;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-top: 2rem;
+            width: 150px;
+            height: 40px;
+            font-size: 1.3rem;
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) {
@@ -393,9 +444,23 @@
             width: 30%;
         }
 
-        .content {   
+        .content {
             width: 40%;
         }
+    }
+
+    .view-6 {
+        flex-direction: row;
+        padding: 15rem;
+
+        img {
+            width: 35%;
+        }
+
+        .content {
+            width: 40%;
+        }
+
     }
 }
 
@@ -427,4 +492,30 @@
     .view-4 {
         aspect-ratio: 16/6;
     }
+
+    .view-5 {
+        padding: 10rem;
+        justify-content: space-between;
+
+        img {
+            width: 30%;
+        }
+
+        .content {
+            width: 40%;
+        }
+    }
+
+    .view-6 {
+        padding: 13rem;
+
+        img {
+            width: 30%;
+        }
+
+        .content {
+            width: 40%;
+        }
+    }
+
 }

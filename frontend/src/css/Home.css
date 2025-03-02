@@ -134,7 +134,7 @@
     transform: translateX(-300%);
   }
   100% {
-    transform: translateX(-390%);
+    transform: translateX(-370%);
   }
 }
 .view-3 {
@@ -279,6 +279,51 @@
   font-size: 1.3rem;
 }
 
+.view-6 {
+  width: 100%;
+  aspect-ratio: 16/6;
+  padding: 1.5rem;
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+}
+.view-6 img {
+  aspect-ratio: 4/4;
+  width: 70%;
+  background-color: #0e0e0e;
+  transform: rotate(135deg);
+  border-radius: 10px;
+}
+.view-6 .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0rem;
+  justify-content: center;
+  align-items: center;
+}
+.view-6 .content h1 {
+  font-size: 4.5rem;
+  color: #173077;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.view-6 .content p {
+  font-size: 1.7rem;
+  color: #173077;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.view-6 .content button {
+  margin-top: 2rem;
+  width: 150px;
+  height: 40px;
+  font-size: 1.3rem;
+}
+
 @media screen and (min-width: 768px) {
   .view-1 {
     flex-direction: row-reverse;
@@ -331,6 +376,16 @@
   .view-5 .content {
     width: 40%;
   }
+  .view-6 {
+    flex-direction: row;
+    padding: 15rem;
+  }
+  .view-6 img {
+    width: 35%;
+  }
+  .view-6 .content {
+    width: 40%;
+  }
 }
 @media screen and (min-width: 1024px) {
   .view-1 img {
@@ -346,5 +401,24 @@
   }
   .view-4 {
     aspect-ratio: 16/6;
+  }
+  .view-5 {
+    padding: 10rem;
+    justify-content: space-between;
+  }
+  .view-5 img {
+    width: 30%;
+  }
+  .view-5 .content {
+    width: 40%;
+  }
+  .view-6 {
+    padding: 13rem;
+  }
+  .view-6 img {
+    width: 30%;
+  }
+  .view-6 .content {
+    width: 40%;
   }
 }/*# sourceMappingURL=Home.css.map */
