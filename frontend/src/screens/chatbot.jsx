@@ -34,7 +34,7 @@ const ChatBot = () => {
     return (
         <Base>
             <main>
-                <section className="view-1">
+                <section className="view">
                     <div className="main" ref={mainRef}>
                         <div className="img">
                             <img

@@ -1,5 +1,6 @@
-.view-1 {
+.view {
     width: 100%;
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +183,7 @@
 
 @media screen and (max-width: 768px) {
 
-    .view-1 {
+    .view {
         padding: 5px;
         .main {
             width: 100%;

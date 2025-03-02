@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Base from "../screens/Base";
+import { gsap } from "gsap";
 import "../css/home.css";
 
+
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     return (
         <Base>
             <div className="container">
@@ -40,6 +47,42 @@ const Home = () => {
                         <p></p>
                         <button></button>
                     </div>
+
+                </section>
+
+                <section className="view-3">
+                    <div className="head">
+                        <h1>5</h1>
+                    </div>
+                    <div className="content">
+                        <div className="cont-1">
+                            <img src="" alt="" />
+                            <h3>66</h3>
+                        </div>
+                        <div className="cont-2">
+                            <img src="" alt="" />
+                            <h3>66</h3>
+                        </div>
+                        <div className="cont-3">
+                            <img src="" alt="" />
+                            <h3>66</h3>
+                        </div>
+                    </div>
+                    <img className="img" src="" alt="" />
+                </section>
+                
+                <section className="view-4"></section>
+
+                <section className="view-5">
+                <img src="" alt="" />
+                    <div className="content">
+                        <h1>Health Care</h1>
+                        <p>Trusted care, healthier lives</p>
+                        <button>Get Started</button>
+                    </div>
+                </section>
+
+                <section className="view-6">
 
                 </section>
             </div>

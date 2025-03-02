@@ -1,10 +1,11 @@
-.view-1 {
+.view {
   width: 100%;
+  padding-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.view-1 .main {
+.view .main {
   width: 80%;
   display: flex;
   padding: 20px;
@@ -14,14 +15,14 @@
   justify-content: center;
   gap: 5px;
 }
-.view-1 .main .img {
+.view .main .img {
   width: 100%;
   display: flex;
   justify-content: center;
   border-radius: 20px;
   aspect-ratio: 4/4;
 }
-.view-1 .main .img img {
+.view .main .img img {
   width: 70%;
   height: 100%;
   -o-object-fit: cover;
@@ -29,7 +30,7 @@
   aspect-ratio: 4/4;
   border-radius: 20px;
 }
-.view-1 .bottom {
+.view .bottom {
   aspect-ratio: 4/4;
   width: 100%;
   border-radius: 20px;
@@ -39,17 +40,17 @@
   align-items: center;
   justify-content: center;
 }
-.view-1 .bottom h1 {
+.view .bottom h1 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.view-1 .bottom textarea {
+.view .bottom textarea {
   height: 200px;
   width: 350px;
   padding: 20px;
   border-radius: 30px;
 }
-.view-1 .bottom button {
+.view .bottom button {
   height: 40px;
   width: 100px;
   background-color: #19f0ff;
@@ -172,19 +173,19 @@ footer a {
 }
 
 @media screen and (max-width: 768px) {
-  .view-1 {
+  .view {
     padding: 5px;
   }
-  .view-1 .main {
+  .view .main {
     width: 100%;
     flex-direction: column;
   }
-  .view-1 .main .img {
+  .view .main .img {
     width: 100%;
     border-radius: 20px;
     aspect-ratio: 4/4;
   }
-  .view-1 .main .img img {
+  .view .main .img img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
@@ -192,7 +193,7 @@ footer a {
     aspect-ratio: 4/4;
     border-radius: 20px;
   }
-  .view-1 .main .bottom {
+  .view .main .bottom {
     aspect-ratio: 4/4;
     width: 100%;
   }
