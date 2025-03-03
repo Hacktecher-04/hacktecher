@@ -97,7 +97,7 @@ const Home = () => {
                         <h1>Health Care</h1>
                         <p>Trusted care, healthier lives</p>
                         <button onClick={() => {window.location.href = "/chatbot"}}>Get Started</button>
-                    </div>
+``                    </div>
                 </section>
 
                 <section className="view-6">
