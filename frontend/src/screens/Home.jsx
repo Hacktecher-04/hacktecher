@@ -10,17 +10,17 @@ const Home = () => {
 
     useEffect(() => {
         gsap.from(".view-1 img", { opacity: 0, duration: 1, delay: 0.5 });
-        gsap.from(".view-1 .text", { opacity: 0,x:-200, duration: 1, delay: 1 });
-        gsap.from(".view-1 button", { opacity: 0,y: 100, duration: 1, delay: 1.5 });
+        gsap.from(".view-1 .text", { opacity: 0, x: -200, duration: 1, delay: 1 });
+        gsap.from(".view-1 button", { opacity: 0, y: 100, duration: 1, delay: 1.5 });
         gsap.to(".view-1 img", { opacity: 1, duration: 1, delay: 0.5 });
-        gsap.to(".view-1 .text", { opacity: 1, x:0, duration: 1, delay: 1 });
-        gsap.to(".view-1 button", { opacity: 1, y:0, duration: 1, delay: 1.5 });
-        
-        gsap.from(".view-3 .head", { opacity: 0,y: -100, duration: 1, delay: 0.5 });
-        gsap.to(".view-3 .head", { opacity: 1, y:0, duration: 1, delay: 0.5 });
+        gsap.to(".view-1 .text", { opacity: 1, x: 0, duration: 1, delay: 1 });
+        gsap.to(".view-1 button", { opacity: 1, y: 0, duration: 1, delay: 1.5 });
 
-        gsap.from(".view-3 .content", { opacity: 0,y: 100, duration: 1, delay: 1 });
-        gsap.to(".view-3 .content", { opacity: 1, y:0, duration: 1, delay: 1 });
+        gsap.from(".view-3 .head", { opacity: 0, y: -100, duration: 1, delay: 0.5 });
+        gsap.to(".view-3 .head", { opacity: 1, y: 0, duration: 1, delay: 0.5 });
+
+        gsap.from(".view-3 .content", { opacity: 0, y: 100, duration: 1, delay: 1 });
+        gsap.to(".view-3 .content", { opacity: 1, y: 0, duration: 1, delay: 1 });
 
 
 
@@ -39,29 +39,39 @@ const Home = () => {
                 </section>
                 <section className="view-2">
                     <div className="img img-1">
-                        <h1>1</h1>
-                        <p></p>
-                        <button></button>
+                        <div className="text">
+                            <h1>2</h1>
+                            <p></p>
+                            <button>Get Started</button>
+                        </div>
                     </div>
                     <div className="img img-2">
-                        <h1>2</h1>
-                        <p></p>
-                        <button></button>
+                        <div className="text">
+                            <h1>Online Blood Supply</h1>
+                            <p>We can order blood online from a nearby hospital.</p>
+                            <button>Get Started</button>
+                        </div>
                     </div>
                     <div className="img img-3">
-                        <h1>3</h1>
-                        <p></p>
-                        <button></button>
+                        <div className="text">
+                            <h1>3</h1>
+                            <p></p>
+                            <button>Get Started</button>
+                        </div>
                     </div>
                     <div className="img img-4">
-                        <h1>4</h1>
-                        <p></p>
-                        <button></button>
+                        <div className="text">
+                            <h1>4</h1>
+                            <p></p>
+                            <button>Get Started</button>
+                        </div>
                     </div>
                     <div className="img img-5">
-                        <h1>5</h1>
-                        <p></p>
-                        <button></button>
+                        <div className="text">
+                            <h1>5</h1>
+                            <p></p>
+                            <button>Get Started</button>
+                        </div>
                     </div>
 
                 </section>
@@ -86,18 +96,18 @@ const Home = () => {
                     </div>
                     <img className="img" src=" " alt="" />
                 </section>
-                
+
                 <section className="view-4">
                     <p>"Good health and good sense are two of life’s greatest blessings"</p>
                 </section>
 
                 <section className="view-5">
-                <img src="src/assets/images/chatbot.png" alt="" />
+                    <img src="src/assets/images/chatbot.png" alt="" />
                     <div className="content">
                         <h1>Health Care</h1>
                         <p>Trusted care, healthier lives</p>
-                        <button onClick={() => {window.location.href = "/chatbot"}}>Get Started</button>
-``                    </div>
+                        <button onClick={() => { window.location.href = "/chatbot" }}>Get Started</button>
+                        ``                    </div>
                 </section>
 
                 <section className="view-6">

@@ -78,10 +78,43 @@
     margin-top: 1rem;
     overflow-x: auto;
 
+
     .img {
-        background-color: #1e3a8a;
+        background-color: #060606;
+        z-index: 1;
         animation: slide 15s infinite;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
         border-radius: 20px;
+
+        h1{
+            font-size: 3rem;
+            color: rgb(19, 19, 19);
+            font-weight: 400;
+        }
+
+        p{
+            font-size: 1.5rem;
+            color: rgb(19, 19, 19);
+            font-weight: 400;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            background-color: #173077;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 400;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+
+
+
     }
 
     .img-1 {
@@ -161,7 +194,7 @@
     }
 
     100% {
-        transform: translateX(-370%);
+        transform: translateX(-385%);
     }
 
 }
