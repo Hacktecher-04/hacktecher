@@ -93,7 +93,7 @@
 }
 .view-2 .img button {
   width: 70px;
-  height: 30px;
+  height: 25px;
   background-color: #173077;
   color: white;
   font-size: 0.5rem;
@@ -370,10 +370,14 @@
 @media screen and (min-width: 768px) {
   .view-1 {
     flex-direction: row-reverse;
+    padding-top: 2rem;
   }
   .view-1 img {
     width: 60%;
     background-position: bottom;
+  }
+  .view-1 .text {
+    margin-top: 4rem;
   }
   .view-1 .text h1 {
     font-size: 5rem;
@@ -384,7 +388,7 @@
   .view-1 .text button {
     margin-top: 2rem;
     width: 150px;
-    height: 40px;
+    height: 50px;
     font-size: 1.3rem;
   }
   .view-2 {
@@ -393,9 +397,23 @@
   .view-2 .img {
     height: 90vh;
   }
+  .view-2 .img .text h1 {
+    font-size: 3rem;
+  }
+  .view-2 .img .text p {
+    font-size: 1.5rem;
+  }
+  .view-2 .img .text button {
+    margin-top: 0.5rem;
+    width: 150px;
+    height: 50px;
+    font-size: 1.3rem;
+    border-radius: 40px;
+  }
   .view-3 .head h1 {
     font-size: 5.5rem;
     padding-top: 2rem;
+    line-height: 6rem;
   }
   .view-3 .content {
     flex-direction: row;
@@ -459,6 +477,10 @@
   }
   .view-2 .img {
     height: 80vh;
+  }
+  .view-3 .head h1 {
+    font-size: 5rem;
+    line-height: 6rem;
   }
   .view-3 .content .cont-1,
   .view-3 .content .cont-2,
