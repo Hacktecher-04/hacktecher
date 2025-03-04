@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bebas Neue", sans-serif;
 }
 
 .base {
@@ -394,6 +393,10 @@
   .view-2 .img {
     height: 90vh;
   }
+  .view-3 .head h1 {
+    font-size: 5.5rem;
+    padding-top: 2rem;
+  }
   .view-3 .content {
     flex-direction: row;
     gap: 1.5rem;
@@ -402,6 +405,11 @@
   .view-3 .content .cont-2,
   .view-3 .content .cont-3 {
     width: 30%;
+  }
+  .view-3 .content .cont-1 h3,
+  .view-3 .content .cont-2 h3,
+  .view-3 .content .cont-3 h3 {
+    font-size: 2.3rem;
   }
   .view-3 .img {
     aspect-ratio: 16/2;
@@ -422,6 +430,17 @@
   }
   .view-5 .content {
     width: 40%;
+  }
+  .view-5 .content h1 {
+    font-size: 4.9rem;
+  }
+  .view-5 .content p {
+    font-size: 2.5rem;
+  }
+  .view-5 .content button {
+    width: 175px;
+    height: 45px;
+    font-size: 1.5rem;
   }
   .view-6 {
     flex-direction: row;
@@ -470,5 +489,16 @@
   }
   .view-6 .content {
     width: 40%;
+  }
+  .view-6 .content h1 {
+    font-size: 4.7rem;
+  }
+  .view-6 .content p {
+    font-size: 2.3rem;
+  }
+  .view-6 .content button {
+    width: 150px;
+    height: 40px;
+    font-size: 1.4rem;
   }
 }/*# sourceMappingURL=Home.css.map */
