@@ -103,44 +103,69 @@ footer {
   color: #f1f1f1;
   background-color: #0e0e0e;
 }
-footer .head {
+footer .footer {
+  display: flex;
+  flex-direction: row;
+  gap: 20rem;
+  align-items: center;
+}
+footer .footer .head {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
-footer .head h1 {
+footer .footer .head h1 {
   font-size: 2.5rem;
   font-weight: 400;
   color: #f1f1f1;
 }
-footer .head p {
+footer .footer .head p {
   font-size: 1.2rem;
   font-weight: 300;
   color: #f1f1f1;
 }
-footer .head add {
+footer .footer .head add {
   font-size: 1rem;
   font-weight: 200;
   color: #f1f1f1;
 }
-footer .nav {
+footer .footer .nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1rem;
 }
-footer .nav a {
+footer .footer .nav a {
   text-decoration: none;
   color: #f1f1f1;
   font-size: 1.2rem;
   font-weight: 300;
 }
-footer .icons {
+footer .footer .contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+footer .footer .contact p {
+  color: #f1f1f1;
+}
+footer .footer .contact .icons {
   display: flex;
   gap: 10px;
+}
+footer .footer .contact .icons a img {
+  width: 1rem;
+  aspect-ratio: 1/1;
+}
+footer .copy p {
+  font-size: 1rem;
+  font-weight: 200;
+  color: #f1f1f1;
 }
 
 @media screen and (max-width: 768px) {
@@ -169,5 +194,8 @@ footer .icons {
   }
   .active ul {
     left: 0;
+  }
+  footer {
+    flex-direction: column;
   }
 }/*# sourceMappingURL=main.css.map */

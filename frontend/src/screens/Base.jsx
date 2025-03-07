@@ -99,6 +99,7 @@ const Header = () => {
 const Footer = () => {
     return (
         <footer>
+            <div className="footer">
             <div className="head">
                 <h1>Health Care</h1>
                 <p>Trusted care, healthier lives</p>
@@ -111,14 +112,17 @@ const Footer = () => {
                 <a href="#">Services</a>
                 <a href="#">Contact</a>
             </div>
-            <div className="icons">
-                <i className="fab fa-facebook-f"></i>
-                <i className="fab fa-twitter"></i>
-                <i className="fab fa-instagram"></i>
-            </div>
             <div className="contact">
+            <div className="icons">
+                <a href="#"><img src="src/assets/icons/facebook.png" alt="Facebook"></img></a>
+                <a href="#"><img src="src/assets/icons/twitter.png" alt="Twitter"></img></a>
+                <a href="#"><img src="src/assets/icons/instagram.png" alt="Instagram"></img></a>
+                <a href="#"><img src="src/assets/icons/linkedin.png" alt="LinkedIn"></img></a>
+            </div>
+
                 <p>Call us at: 123-456-7890</p>
                 <p>Email us at: 8o9yO@example.com</p>
+            </div>
             </div>
             <div className="copy">
                 <p>&copy; 2023 Health Care. All rights reserved.</p>
@@ -128,5 +132,3 @@ const Footer = () => {
 }
 
 export default Base;
-
-
