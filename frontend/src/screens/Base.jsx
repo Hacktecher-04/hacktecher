@@ -3,7 +3,7 @@ import { gsap } from "gsap";
 
 
 const Base = ({ children }) => {
-    
+
     return (
         <div className="base">
             <Header />
@@ -71,7 +71,7 @@ const Header = () => {
                             <a onClick={() => window.location.href = "/about"}>About</a>
                         </li>
                         <li>
-                            <a onClick={() =>window.location.href = "/services"}>Services</a>
+                            <a onClick={() => window.location.href = "/services"}>Services</a>
                         </li>
                         <li>
                             <a href="#">Contact</a>
@@ -99,7 +99,30 @@ const Header = () => {
 const Footer = () => {
     return (
         <footer>
-            <p>&copy; 2023 Health Care</p>
+            <div className="head">
+                <h1>Health Care</h1>
+                <p>Trusted care, healthier lives</p>
+                <add>Address: 123 Main Street, New York, NY 10001</add>
+            </div>
+
+            <div className="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div className="icons">
+                <i className="fab fa-facebook-f"></i>
+                <i className="fab fa-twitter"></i>
+                <i className="fab fa-instagram"></i>
+            </div>
+            <div className="contact">
+                <p>Call us at: 123-456-7890</p>
+                <p>Email us at: 8o9yO@example.com</p>
+            </div>
+            <div className="copy">
+                <p>&copy; 2023 Health Care. All rights reserved.</p>
+            </div>
         </footer>
     );
 }
