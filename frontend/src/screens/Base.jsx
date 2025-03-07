@@ -68,7 +68,10 @@ const Header = () => {
                             <a href="#">Home</a>
                         </li>
                         <li>
-                            <a href="#">About</a>
+                            <a onClick={() => window.location.href = "/about"}>About</a>
+                        </li>
+                        <li>
+                            <a onClick={() =>window.location.href = "/services"}>Services</a>
                         </li>
                         <li>
                             <a href="#">Contact</a>
