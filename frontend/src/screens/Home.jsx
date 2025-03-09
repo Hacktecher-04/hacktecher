@@ -16,11 +16,18 @@ const Home = () => {
         gsap.to(".view-1 .text", { opacity: 1, x: 0, duration: 1, delay: 1 });
         gsap.to(".view-1 button", { opacity: 1, y: 0, duration: 1, delay: 1.5 });
 
-        gsap.from(".view-3 .head", { opacity: 0, y: -100, duration: 1, delay: 0.5 });
-        gsap.to(".view-3 .head", { opacity: 1, y: 0, duration: 1, delay: 0.5 });
+        const viewThree = document.querySelector(".view-3");
+        const trigger = {
+            trigger: viewThree,
+            start: "top 90%",
+            toggleActions: "restart pause reset",
+        };
 
-        gsap.from(".view-3 .content", { opacity: 0, y: 100, duration: 1, delay: 1 });
-        gsap.to(".view-3 .content", { opacity: 1, y: 0, duration: 1, delay: 1 });
+        gsap.from(".view-3 .head", trigger, { opacity: 0, y: -100, duration: 1, delay: 0.5 });
+        gsap.to(".view-3 .head", trigger, { opacity: 1, y: 0, duration: 1, delay: 0.5 });
+
+        gsap.from(".view-3 .content", trigger, { opacity: 0, y: 100, duration: 1, delay: 1 });
+        gsap.to(".view-3 .content", trigger, { opacity: 1, y: 0, duration: 1, delay: 1 });
 
 
 
