@@ -23,3 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 .env
+src\css\Home.css.map
+src\css\Home.scss
+src\css\main.scss
+src\css\main.css.map
+src\css\chatbot.scss
+src\css\chatbot.css.map
