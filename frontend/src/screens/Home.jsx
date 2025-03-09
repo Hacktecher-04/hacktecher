@@ -39,7 +39,7 @@ const Home = () => {
                 <section className="view-1">
                     <img src="src/assets/images/docter.png" alt="" />
                     <div className="text">
-                        <h1>Health Care</h1>
+                        <h1>Healwon</h1>
                         <p>Trusted care, healthier lives</p>
                         <button>Get Started</button>
                     </div>

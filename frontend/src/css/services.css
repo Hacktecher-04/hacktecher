@@ -14,32 +14,46 @@ body {
   padding: 2rem 15px;
   display: flex;
   flex-direction: column;
+  background-image: url("images\bg-services.webp");
+  background-size: cover;
+  background-image: fixed;
   gap: 1rem;
 }
 
 .hero {
-  background-color: #fff;
+  background-image: url("images\bg-image.webp");
+  background-size: cover;
+  background-position: center;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 1rem;
   padding: 20px;
+  border: 0.2rem solid #19f0ff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
+  line-height: 3rem;
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.hero .text {
-  flex: 1;
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
 }
-.hero .image {
-  flex: 1;
+.hero p {
+  font-size: 1.4rem;
+  font-weight: 300;
 }
-.hero .image img {
-  width: 100%;
-  border-radius: 5px;
+.hero button {
+  padding: 10px 20px;
+  background-color: #19f0ff;
+  border: none;
+  border-radius: 5rem;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .view-service-1 {

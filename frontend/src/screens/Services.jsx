@@ -16,7 +16,6 @@ const Services = () => {
         { title: "Emergency Services", text: "We provide emergency services to patients who need immediate medical attention.", img: "images/emergency.png", alt: "Emergency" },
         { title: "Specialized Services", text: "We offer specialized services to patients with unique medical needs.", img: "images/specialized.png", alt: "Specialized" },
         { title: "Outpatient Services", text: "We provide outpatient services to patients who do not require hospitalization.", img: "images/outpatient.png", alt: "Outpatient" },
-        { title: "Diagnostic Services", text: "We offer diagnostic services to help identify and treat medical conditions.", img: "images/diagnostic.png", alt: "Diagnostic" },
         { title: "Pharmacy Services", text: "We provide pharmacy services to patients who need medication.", img: "images/pharmacy.png", alt: "Pharmacy" },
         { title: "Telemedicine Services", text: "We offer telemedicine services to connect patients with healthcare professionals remotely.", img: "images/telemedicine.png", alt: "Telemedicine" },
         { title: "Home Care Services", text: "We provide home care services to patients who require care at home.", img: "images/homecare.png", alt: "Home Care" },
@@ -28,7 +27,7 @@ const Services = () => {
         { title: "Maternity Services", text: "We offer maternity services.", img: "images/maternity.png", alt: "Maternity" },
         { title: "Pediatric Services", text: "We provide pediatric services to children who need medical care.", img: "images/pediatric.png", alt: "Pediatric" },
         { title: "Geriatric Services", text: "We offer geriatric services to elderly patients who need medical care.", img: "images/geriatric.png", alt: "Geriatric" },
-        { title: "Primary Care Services", text: "We provide primary care services cvvdfsdsdsdsdsd sdsdsdsdsdsdsdsdsdsdsds dsdsdsdsdsdsdsdsdsdsds dsdsdsdsdsdsdsdsdsdsdsd sdsdsdsdsdsdsdsdsdsdsdsds dsdsdsdsdsdsdsdto patients who need routine medical care.", img: "images/primary.png", alt: "Primary Care" },
+        { title: "Primary Care Services", text: "We provide primary care services to patients who need routine medical care.", img: "images/primary.png", alt: "Primary Care" },
     ];
 
     return (
