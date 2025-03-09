@@ -17,6 +17,8 @@ body {
 .base {
     height: 100%;
     width: 100%;
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -108,18 +110,17 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 2rem 0;
     text-align: center;
-    gap: 3rem;
+    gap: 2rem;
     color: #f1f1f1;
     background-color: #0e0e0e;
 
     .footer {
         display: flex;
         flex-direction: row;
-        gap: 20rem  ;
+        gap: 10rem;
         align-items: center;
 
         .head {
@@ -236,7 +237,8 @@ footer {
     }
 
     footer {
-        flex-direction: column;
+        .footer {
+            flex-direction: column;
+        }
     }
-
 }
