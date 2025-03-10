@@ -14,7 +14,6 @@ body {
   padding: 2rem 15px;
   display: flex;
   flex-direction: column;
-  background-image: url("images\bg-services.webp");
   background-size: cover;
   background-image: fixed;
   gap: 1rem;
@@ -24,7 +23,6 @@ body {
   background-image: url("images\bg-image.webp");
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 1rem;
   padding: 20px;
   border: 0.2rem solid #19f0ff;
@@ -32,22 +30,25 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  margin-top: 5rem;
   align-items: center;
-  gap: 20px;
   line-height: 3rem;
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 .hero h1 {
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
 }
 .hero p {
   font-size: 1.4rem;
-  font-weight: 300;
+  font-weight: 400;
+  line-height: 1.7rem;
+  margin-bottom: 1rem;
 }
 .hero button {
+  max-width: 20rem;
   padding: 10px 20px;
   background-color: #19f0ff;
   border: none;
@@ -63,19 +64,38 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-1 .text {
+  width: 100%;
   flex: 1;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
   border-radius: 5px;
+}
+.view-service-1 .text h1 {
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 2.6rem;
+  margin-bottom: .8rem;
+}
+.view-service-1 .text button {
+  padding: 10px 20px;
+  background-color: #19f0ff;
+  border: none;
+  border-radius: 5rem;
+  font-size: 16px;
+  cursor: pointer;
+}
+.view-service-1 .text p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 1.7rem;
+  margin-bottom: 1rem;
 }
 .view-service-1 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-1 .image img {
   width: 100%;
@@ -89,19 +109,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-2 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-2 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-2 .image img {
   width: 100%;
@@ -115,19 +133,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-3 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-3 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-3 .image img {
   width: 100%;
@@ -141,19 +157,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-4 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-4 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-4 .image img {
   width: 100%;
@@ -167,19 +181,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-5 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-5 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-5 .image img {
   width: 100%;
@@ -193,19 +205,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-6 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-6 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-6 .image img {
   width: 100%;
@@ -219,19 +229,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-7 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-7 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-7 .image img {
   width: 100%;
@@ -245,19 +253,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-8 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-8 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-8 .image img {
   width: 100%;
@@ -271,19 +277,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-9 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-9 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-9 .image img {
   width: 100%;
@@ -297,19 +301,17 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-10 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-10 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-10 .image img {
   width: 100%;
@@ -323,151 +325,19 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 20px;
-  margin-top: 50px;
   margin-bottom: 50px;
   padding: 0 20px;
 }
 .view-service-11 .text {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
 }
 .view-service-11 .image {
   flex: 1;
+  max-width: 20rem;
 }
 .view-service-11 .image img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.view-service-12 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0 20px;
-}
-.view-service-12 .text {
-  flex: 1;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.view-service-12 .image {
-  flex: 1;
-}
-.view-service-12 .image img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.view-service-13 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0 20px;
-}
-.view-service-13 .text {
-  flex: 1;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.view-service-13 .image {
-  flex: 1;
-}
-.view-service-13 .image img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.view-service-14 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0 20px;
-}
-.view-service-14 .text {
-  flex: 1;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.view-service-14 .image {
-  flex: 1;
-}
-.view-service-14 .image img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.view-service-15 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0 20px;
-}
-.view-service-15 .text {
-  flex: 1;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.view-service-15 .image {
-  flex: 1;
-}
-.view-service-15 .image img {
-  width: 100%;
-  border-radius: 5px;
-}
-
-.view-service-16 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  padding: 0 20px;
-}
-.view-service-16 .text {
-  flex: 1;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
-.view-service-16 .image {
-  flex: 1;
-}
-.view-service-16 .image img {
   width: 100%;
   border-radius: 5px;
 }
@@ -484,7 +354,16 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+
+  .view-service-1 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-2 {
     flex-direction: row-reverse;
     gap: 50px;
@@ -496,7 +375,17 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+
+  .view-service-2 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
+
   .view-service-3 {
     flex-direction: row;
     gap: 50px;
@@ -508,7 +397,15 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+  .view-service-3 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-4 {
     flex-direction: row-reverse;
     gap: 50px;
@@ -520,7 +417,15 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+  .view-service-4 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-5 {
     flex-direction: row;
     gap: 50px;
@@ -532,7 +437,15 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+  .view-service-5 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-6 {
     flex-direction: row-reverse;
     gap: 50px;
@@ -544,7 +457,15 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+  .view-service-6 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-7 {
     flex-direction: row;
     gap: 50px;
@@ -556,7 +477,15 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+  .view-service-7 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-8 {
     flex-direction: row-reverse;
     gap: 50px;
@@ -568,7 +497,15 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+  .view-service-8 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-9 {
     flex-direction: row;
     gap: 50px;
@@ -580,7 +517,15 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+  .view-service-9 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-10 {
     flex-direction: row-reverse;
     gap: 50px;
@@ -592,7 +537,15 @@ body {
     flex: 1;
     align-items: center;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
   }
+  .view-service-10 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+  }
+
   .view-service-11 {
     flex-direction: row;
     gap: 50px;
@@ -603,66 +556,15 @@ body {
   .view-service-11 .image {
     flex: 1;
     align-items: center;
+    max-width: 100%;
     justify-content: center;
+    max-width: 100%;
+    aspect-ratio: 16/10;
+    aspect-ratio: 16/10;
   }
-  .view-service-12 {
-    flex-direction: row-reverse;
-    gap: 50px;
-  }
-  .view-service-12 .text {
-    flex: 1;
-  }
-  .view-service-12 .image {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-  }
-  .view-service-13 {
-    flex-direction: row;
-    gap: 50px;
-  }
-  .view-service-13 .text {
-    flex: 1;
-  }
-  .view-service-13 .image {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-  }
-  .view-service-14 {
-    flex-direction: row-reverse;
-    gap: 50px;
-  }
-  .view-service-14 .text {
-    flex: 1;
-  }
-  .view-service-14 .image {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-  }
-  .view-service-15 {
-    flex-direction: row;
-    gap: 50px;
-  }
-  .view-service-15 .text {
-    flex: 1;
-  }
-  .view-service-15 .image {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-  }
-  .view-service-16 {
-    flex-direction: row-reverse;
-    gap: 50px;
-  }
-  .view-service-16 .text {
-    flex: 1;
-  }
-  .view-service-16 .image {
-    flex: 1;
-    align-items: center;
-    justify-content: center;
+  .view-service-11 .image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
   }
 }

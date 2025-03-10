@@ -13,21 +13,17 @@ const Services = () => {
     };
 
     const services = [
-        { title: "Emergency Services", text: "We provide emergency services to patients who need immediate medical attention.", img: "images/emergency.png", alt: "Emergency" },
-        { title: "Specialized Services", text: "We offer specialized services to patients with unique medical needs.", img: "images/specialized.png", alt: "Specialized" },
-        { title: "Outpatient Services", text: "We provide outpatient services to patients who do not require hospitalization.", img: "images/outpatient.png", alt: "Outpatient" },
-        { title: "Pharmacy Services", text: "We provide pharmacy services to patients who need medication.", img: "images/pharmacy.png", alt: "Pharmacy" },
-        { title: "Telemedicine Services", text: "We offer telemedicine services to connect patients with healthcare professionals remotely.", img: "images/telemedicine.png", alt: "Telemedicine" },
-        { title: "Home Care Services", text: "We provide home care services to patients who require care at home.", img: "images/homecare.png", alt: "Home Care" },
-        { title: "Rehabilitation Services", text: "We offer rehabilitation services to help patients recover from injuries or illnesses.", img: "images/rehabilitation.png", alt: "Rehabilitation" },
-        { title: "Wellness Services", text: "We provide wellness services to help patients maintain good health.", img: "images/wellness.png", alt: "Wellness" },
-        { title: "Long-Term Care Services", text: "We offer long-term care services to patients who need ongoing support.", img: "images/longterm.png", alt: "Long-Term Care" },
-        { title: "Medical Imaging Services", text: "We provide medical imaging services to help diagnose and treat medical conditions.", img: "images/imaging.png", alt: "Medical Imaging" },
-        { title: "Intensive Care Services", text: "We provide intensive care services to patients who require intensive care.", img: "images/intensive.png", alt: "Intensive Care" },
-        { title: "Maternity Services", text: "We offer maternity services.", img: "images/maternity.png", alt: "Maternity" },
-        { title: "Pediatric Services", text: "We provide pediatric services to children who need medical care.", img: "images/pediatric.png", alt: "Pediatric" },
-        { title: "Geriatric Services", text: "We offer geriatric services to elderly patients who need medical care.", img: "images/geriatric.png", alt: "Geriatric" },
-        { title: "Primary Care Services", text: "We provide primary care services to patients who need routine medical care.", img: "images/primary.png", alt: "Primary Care" },
+        { title: "Emergency Services", text: "We provide emergency services to patients who need immediate medical attention.", img: "src/assets/images/services/emergency.png", alt: "Emergency" },
+        { title: "Specialized Services", text: "We offer specialized services to patients with unique medical needs.", img: "src/assets/images/services/specialized.png", alt: "Specialized" },
+        { title: "Outpatient Services", text: "We provide outpatient services to patients who do not require hospitalization.", img: "src/assets/images/services/outpatient.png", alt: "Outpatient" },
+        { title: "Pharmacy Services", text: "We provide pharmacy services to patients who need medication.", img: "src/assets/images/services/pharmacy.png", alt: "Pharmacy" },
+        { title: "Telemedicine Services", text: "We offer telemedicine services to connect patients with healthcare professionals remotely.", img: "src/assets/images/services/telemedicine.png", alt: "Telemedicine" },
+        { title: "Home Care Services", text: "We provide home care services to patients who require care at home.", img: "src/assets/images/services/homecare.png", alt: "Home Care" },
+        { title: "Rehabilitation Services", text: "We offer rehabilitation services to help patients recover from injuries or illnesses.", img: "src/assets/images/services/rehabilitation.png", alt: "Rehabilitation" },
+        { title: "Wellness Services", text: "We provide wellness services to help patients maintain good health.", img: "src/assets/images/services/wellness.png", alt: "Wellness" },
+        { title: "Long-Term Care Services", text: "We offer long-term care services to patients who need ongoing support.", img: "src/assets/images/services/longterm.png", alt: "Long-Term Care" },
+        { title: "Intensive Care Services", text: "We provide intensive care services to patients who require intensive care.", img: "src/assets/images/services/intensive.png", alt: "Intensive Care" },
+        { title: "Maternity Services", text: "We offer maternity services.", img: "src/assets/images/services/maternity.png", alt: "Maternity" },
     ];
 
     return (
@@ -38,7 +34,7 @@ const Services = () => {
                     <p>
                         We offer a wide range of medical services to meet your needs.
                     </p>
-                    <button>Learn More</button>
+                    <button className="btn btn-primary">Learn More</button>
                 </div>
                 {services.map((service, index) => (
                     <section key={index} className={`view-service-${index + 1}`} style={{ marginBottom: "20px" }}>

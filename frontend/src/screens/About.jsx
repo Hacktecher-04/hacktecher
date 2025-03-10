@@ -9,6 +9,7 @@ const About = () => {
         <section className="view-about-1">
           <div className="text">
             <h1>About</h1>
+           <button className="btn btn-primary">Read More</button>
             <p>
               Welcome to our hospital, where we prioritize patient care and
               excellence in healthcare. Our mission is to provide compassionate
