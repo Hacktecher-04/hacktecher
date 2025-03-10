@@ -65,7 +65,7 @@ const Header = () => {
                 <div className="nav">
                     <ul>
                         <li>
-                            <a href="#">Home</a>
+                            <a onClick={() => window.location.href = "/"}>Home</a>
                         </li>
                         <li>
                             <a onClick={() => window.location.href = "/about"}>About</a>
@@ -100,29 +100,33 @@ const Footer = () => {
     return (
         <footer>
             <div className="footer">
-            <div className="head">
-                <h1>Health Care</h1>
-                <p>Trusted care, healthier lives</p>
-                <add>Address: 123 Main Street, New York, NY 10001</add>
-            </div>
+                <div className="head">
+                    <h1>Health Care</h1>
+                    <p>Trusted care, healthier lives</p>
+                    <add>Address: 123 Main Street, New York, NY 10001</add>
+                </div>
 
-            <div className="nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </div>
-            <div className="contact">
-            <div className="icons">
-                <a href="#"><img src="src/assets/icons/facebook.png" alt="Facebook"></img></a>
-                <a href="#"><img src="src/assets/icons/twitter.png" alt="Twitter"></img></a>
-                <a href="#"><img src="src/assets/icons/instagram.png" alt="Instagram"></img></a>
-                <a href="#"><img src="src/assets/icons/linkedin.png" alt="LinkedIn"></img></a>
-            </div>
+                <div className="nav">
+                    <a onClick={() => window.location.href = "/"}>Home</a>
+                    <a onClick={() => window.location.href = "/about"}>About</a>
+                    <a onClick={() => window.location.href = "/services"}>Services</a>
+                    <a href="#">Contact</a>
+                </div>
+                <div className="contact">
+                    <a onClick={() => window.location.href = "/privacy"}>Privacy Policy & Terms and Conditions</a>
+                    <a onClick={() => window.location.href = "/help"}>Help Us</a>
 
-                <p>Call us at: 123-456-7890</p>
-                <p>Email us at: 8o9yO@example.com</p>
-            </div>
+                    <p>Follow Us</p>
+                    <div className="icons">
+                        <a href="#"><img src="src/assets/icons/facebook.png" alt="Facebook"></img></a>
+                        <a href="#"><img src="src/assets/icons/twitter.png" alt="Twitter"></img></a>
+                        <a href="#"><img src="src/assets/icons/instagram.png" alt="Instagram"></img></a>
+                        <a href="#"><img src="src/assets/icons/linkedin.png" alt="LinkedIn"></img></a>
+                    </div>
+
+                    <p onClick={() => window.open("tel:1234567890")}>Call us at: 123-456-7890</p>
+                    <p onClick={() => window.open("https://mail.google.com/mail/?view=cm&fs=1&to=hacktecher04@gmail.com&su=Subject&body=Body", "_self")}>Email us at: hacktecher04@gmail.com</p>
+                </div>
             </div>
             <div className="copy">
                 <p>&copy; 2023 Health Care. All rights reserved.</p>

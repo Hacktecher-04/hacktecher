@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Bebas Neue", sans-serif;
+  font-family: "Oswald", sans-serif;
   color: #0e0e0e;
 }
 
@@ -107,7 +107,7 @@ footer {
 footer .footer {
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  gap: 15rem;
   align-items: center;
 }
 footer .footer .head {
@@ -155,6 +155,12 @@ footer .footer .contact {
 footer .footer .contact p {
   color: #f1f1f1;
 }
+footer .footer .contact a {
+  color: #0568af;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
 footer .footer .contact .icons {
   display: flex;
   gap: 10px;
@@ -198,5 +204,6 @@ footer .copy p {
   }
   footer .footer {
     flex-direction: column;
+    gap: 4rem;
   }
 }
