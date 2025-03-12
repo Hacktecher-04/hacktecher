@@ -19,6 +19,7 @@ const Header = () => {
         const nav = document.querySelector("nav");
         const logo = document.querySelector(".logo");
         const prf = document.querySelector(".prf");
+        const search = document.querySelector(".search input");
 
         const handleBarClick = () => {
             bar.classList.toggle("active");
@@ -52,10 +53,46 @@ const Header = () => {
             }
         };
 
-        bar.addEventListener("click", handleBarClick);
+        const handleSearch = (e) => {
+            if (e.key === "Enter") {
+                const searchQuery = e.target.value;
+                const pages = [
+                    "/",
+                    "/about",
+                    "/home",
+                    "/chatbot",
+                    "/privacy",
+                    "/help",
+                    "/services",
+                    "/business",
+                    "/technology",
+                ];
+                const promises = pages.map((page) => fetch(`${page}?query=${searchQuery}`));
+                Promise.all(promises).then((responses) => {
+                    const contents = responses.map((response) => response.text());
+                    const bestContent = contents.reduce((prev, curr) => {
+                        const prevScore = getScoreFromHtml(prev);
+                        const currScore = getScoreFromHtml(curr);
+                        return prevScore > currScore ? prev : curr;
+                    });
+                    window.location.href = `${pages[contents.indexOf(bestContent)]}?query=${searchQuery}`;
+                });
+            }
+        };
+    
+        search.addEventListener("keydown", handleSearch);
+
+        const getScoreFromHtml = (html) => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+            const text = doc.body.textContent;
+            const score = text.split(" ").filter((word) => word === searchQuery).length;
+            return score;
+        };
 
         return () => {
             bar.removeEventListener("click", handleBarClick);
+            search.removeEventListener("keydown", handleSearch);
         };
     }, []);
     return (
@@ -84,6 +121,9 @@ const Header = () => {
                             <span></span>
                             <span></span>
                         </div>
+                        <div className="search-bar">
+                            <i class="fa fa-search"></i>
+                        </div>
                         <div className="prf">
                             <img
                                 src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80"
@@ -92,6 +132,10 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
+            <div className="search">
+                <input type="text" placeholder="Search..." />
+                <button>Search</button>
+            </div>
         </header>
     );
 }

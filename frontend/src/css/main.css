@@ -16,21 +16,28 @@ body {
 .base {
   height: 100%;
   width: 100%;
-  padding: 1rem;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-nav {
-  width: 100%;
+header {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar{
   position: absolute;
   top: 0;
   left: 0;
-  justify-content: space-between;
-  align-items: center;
+  padding: 1rem;
+  
+}
+
+nav {
+  width: 100%;
   padding: 1rem; 
 }
 
@@ -94,6 +101,12 @@ nav .nav .profile .prf img {
   color: #f1f1f1;
 }
 
+.search {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 footer {
   width: 100%;
   display: flex;
@@ -145,7 +158,13 @@ footer .footer .nav a {
   color: #f1f1f1;
   font-size: 1.2rem;
   font-weight: 300;
+  transition: all 0.3s ease-in-out;
 }
+
+footer .footer .nav a:hover {
+  color: #0568af;
+}
+
 footer .footer .contact {
   display: flex;
   flex-direction: column;
@@ -162,6 +181,9 @@ footer .footer .contact a {
   font-size: 1.2rem;
   font-weight: 300;
 }
+footer .footer .contact a:hover {
+  color: #f1f1f1;
+}
 footer .footer .contact .icons {
   display: flex;
   gap: 10px;
@@ -175,6 +197,8 @@ footer .copy p {
   font-weight: 200;
   color: #f1f1f1;
 }
+
+
 
 @media screen and (max-width: 768px) {
   .bar {

@@ -35,11 +35,11 @@ const Home = () => {
 
     return (
         <Base>
-            <div className="container">
+            <div className="container-home">
                 <section className="view-1">
                     <img src="src/assets/images/docter.png" alt="" />
                     <div className="text">
-                        <h1>Healwon</h1>
+                        <h1>HEALTHWON</h1>
                         <p>Trusted care, healthier lives</p>
                         <button>Get Started</button>
                     </div>
