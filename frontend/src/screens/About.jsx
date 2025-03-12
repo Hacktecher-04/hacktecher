@@ -5,26 +5,20 @@ import "../css/about.css";
 const About = () => {
   return (
     <Base>
-      <div className="container-about">
-        <section className="view-about-1">
+      <div className="container-about">  
+
+        <section className="view-about">
           <div className="text">
             <h1>About</h1>
-           <button className="btn btn-primary">Read More</button>
             <p>
               Welcome to our hospital, where we prioritize patient care and
               excellence in healthcare. Our mission is to provide compassionate
               medical services that meet the needs of our patients and their  families.
             </p>
           </div>
-          <div className="img">
-            <img src="images/about.png" alt="About" />
-          </div>
         </section>
 
-        <section className="view-about-2">
-          <div className="img">
-            <img src="images/about2.png" alt="About" />
-          </div>
+        <section className="view-about">
           <div className="text">
             <h1>Our Mission</h1>
             <p>
@@ -36,7 +30,7 @@ const About = () => {
           </div>
         </section>
 
-        <section className="view-about-3">  
+        <section className="view-about">
           <div className="text">
             <h1>Our Vision</h1>
             <p>
@@ -46,28 +40,22 @@ const About = () => {
               excellence and patient care.
             </p>
           </div>
-          <div className="img">
-            <img src="images/about3.png" alt="About" />
-          </div>
         </section>
 
-        <section className="view-about-4">
-          <div className="img">
-            <img src="images/about4.png" alt="About" />
-          </div>
+        <section className="view-about">
           <div className="text">
             <h1>Our Values</h1>
             <p>
               Our values reflect our commitment to excellence in healthcare
               services. We believe in providing compassionate care, transparency,
               and integrity in all that we do. Our team is dedicated to
-              upholding these values and ensuring that our patients receive the best    
+              upholding these values and ensuring that our patients receive the best
             </p>
           </div>
         </section>
 
         <section className="view-about-5">
-          <div className="text">  
+          <div className="text">
             <h1>Our Team</h1>
             <p>
               Our dedicated team of healthcare professionals is committed to
@@ -82,15 +70,15 @@ const About = () => {
         </section>
 
         <section className="view-about-6">
-          <div className="img"> 
+          <div className="img">
             <img src="images/about6.png" alt="About" />
           </div>
-            <div className="text">
-            <h1>Our Testimonials</h1> 
+          <div className="text">
+            <h1>Our Testimonials</h1>
             <div className="testimonial-blocks">
               <div className="block">
                 <img src="images/testimonial1.png" alt="Testimonial" />
-                <p className="name">Jane Doe</p> 
+                <p className="name">Jane Doe</p>
                 <p>
                   "I was diagnosed with cancer and the doctors at this
                   hospital treated me with such care and compassion. I am so
@@ -134,7 +122,7 @@ const About = () => {
             </div>
           </div>
         </section>
-        
+
       </div >
     </Base >
   );

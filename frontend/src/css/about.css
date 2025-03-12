@@ -16,89 +16,32 @@ body {
   justify-content: center;
   gap: 2rem;
   padding: 0 1.2rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
   align-items: center;
 }
 
-.view-about-1 {
+.view-about {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column-reverse;
 }
-.view-about-1 .text h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
+.view-about .text h1 {
   color: #333;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
   text-align: center;
 }
-.view-about-1 .text p {
+.view-about .text p {
   font-size: 1rem;
   color: #666;
 }
 
-.view-about-2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.view-about-2 .text h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #333;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-.view-about-2 .text p {
-  font-size: 1rem;
-  color: #666;
-}
-
-.view-about-3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column-reverse;
-}
-.view-about-3 .text h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #333;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-.view-about-3 .text p {
-  font-size: 1rem;
-  color: #666;
-}
-
-.view-about-4 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.view-about-4 .text h1 {
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: #333;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  text-align: center;
-}
-.view-about-4 .text p {
-  font-size: 1rem;
-  color: #666;
-}
-.view-about-4 .img img {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+.background-image{
+  background-size:cover;
+  background-position:center;
+  opacity:5;
+  background-image: url(https://img.freepik.com/free-vector/senior-people-getting-checkup-hospital_53876-59913.jpg?t=st=1741694231~exp=1741697831~hmac=5923d33915266ab0b75a905e43dbe6f79e376d880dade7e66ded7d5d0561dc7d&w=1380);
 }
 
 .view-about-5 {

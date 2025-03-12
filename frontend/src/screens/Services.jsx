@@ -14,7 +14,7 @@ const Services = () => {
 
     const services = [
         { title: "Emergency Services", text: "We provide emergency services to patients who need immediate medical attention.", img: "src/assets/images/services/emergency.png", alt: "Emergency" },
-        { title: "Specialized Services", text: "We offer specialized services to patients with unique medical needs.", img: "src/assets/images/services/specialized.png", alt: "Specialized" },
+        { title: "Specialized Services", text: "We offer specialized services to patients with unique medical needs.", img: "src/assets/images/services/specialized.png", alt: "Specialized", extraCss: true },
         { title: "Outpatient Services", text: "We provide outpatient services to patients who do not require hospitalization.", img: "src/assets/images/services/outpatient.png", alt: "Outpatient" },
         { title: "Pharmacy Services", text: "We provide pharmacy services to patients who need medication.", img: "src/assets/images/services/pharmacy.png", alt: "Pharmacy" },
         { title: "Telemedicine Services", text: "We offer telemedicine services to connect patients with healthcare professionals remotely.", img: "src/assets/images/services/telemedicine.png", alt: "Telemedicine" },
@@ -34,18 +34,18 @@ const Services = () => {
                     <p>
                         We offer a wide range of medical services to meet your needs.
                     </p>
-                    <button className="btn btn-primary">Learn More</button>
+                    <button className="btn btn-outline-dark">Learn More</button>
                 </div>
                 {services.map((service, index) => (
-                    <section key={index} className={`view-service-${index + 1}`} style={{ marginBottom: "20px" }}>
-                        <div className="text" style={{ overflow: "hidden", maxHeight: "200px" }}>
+                    <section key={index} className="view-service" style={{ marginBottom: "20px" }}>
+                        <div className="text" style={{ overflow: "hidden", maxHeight: "180px" }}>
                             <h1>{service.title}</h1>
                             <p>
                                 <span style={{ whiteSpace: "pre-line", overflow: "hidden" }}>
                                     {showMore[index] ? service.text : `${service.text.substring(0, 100)}...`}
                                 </span>
                             </p>
-                            <button onClick={() => toggleShowMore(index)}>
+                            <button className="btn btn-outline-dark" onClick={() => toggleShowMore(index)}>
                                 {showMore[index] ? "Show Less" : "Show More"}
                             </button>
                         </div>
