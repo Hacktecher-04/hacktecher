@@ -37,7 +37,7 @@ const Home = () => {
         <Base>
             <div className="container-home">
                 <section className="view-1">
-                    <img src="src/assets/images/docter.png" alt="" />
+                    {/* <img src="src/assets/images/docter.png" alt="" /> */}
                     <div className="text">
                         <h1>HEALTHWON</h1>
                         <p>Trusted care, healthier lives</p>

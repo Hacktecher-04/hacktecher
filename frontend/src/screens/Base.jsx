@@ -79,8 +79,8 @@ const Header = () => {
                 });
             }
         };
-    
-        search.addEventListener("keydown", handleSearch);
+
+        // search.addEventListener("keydown", handleSearch);
 
         const getScoreFromHtml = (html) => {
             const parser = new DOMParser();
@@ -91,15 +91,42 @@ const Header = () => {
         };
 
         return () => {
-            bar.removeEventListener("click", handleBarClick);
-            search.removeEventListener("keydown", handleSearch);
+            // bar.removeEventListener("click", handleBarClick);
+            // search.removeEventListener("keydown", handleSearch);
         };
     }, []);
     return (
         <header>
+            {/* <nav className="navbar navbar-expand-lg navbar-light bg-light">
+                <div className="container-fluid">
+                    <a className="navbar-brand" href="#">Navbar</a>
+                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span className="navbar-toggler-icon"></span>
+                    </button>
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li className="nav-item">
+                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li className="nav-item">
+                                <a className="nav-link" href="#">Link</a>
+                            </li>
+
+                        </ul>
+                        <form className="d-flex">
+                            <input className="form-control me-2" type="search" placeholder="Search" />
+                            <button className="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav> */}
             <nav className="navbar">
                 <div className="logo">Logo</div>
-                <div className="nav">
+                <div className="d-flex flex-grow-1 mx-5 searchInput">
+                    <input className="form-control me-1 inputBg" type="search" placeholder="Search..." />
+                    <button className="btn btn-outline-light py-1" type="submit">Search</button>
+                </div>
+                <div className="nav">              
                     <ul>
                         <li>
                             <a onClick={() => window.location.href = "/"}>Home</a>
@@ -121,9 +148,9 @@ const Header = () => {
                             <span></span>
                             <span></span>
                         </div>
-                        <div className="search-bar">
-                            <i class="fa fa-search"></i>
-                        </div>
+                        {/* <div className="search-bar">
+                            <i className="fa fa-search"></i>
+                        </div> */}
                         <div className="prf">
                             <img
                                 src="https://images.unsplash.com/photo-1499714608240-22fc6ad53fb2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=76&q=80"
@@ -132,10 +159,7 @@ const Header = () => {
                     </div>
                 </div>
             </nav>
-            <div className="search">
-                <input type="text" placeholder="Search..." />
-                <button>Search</button>
-            </div>
+
         </header>
     );
 }
