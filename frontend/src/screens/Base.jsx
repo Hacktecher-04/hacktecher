@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
+import Chatbotmoveble from "../screens/Chatbot-moveble";
+
 
 
 const Base = ({ children }) => {
@@ -8,6 +10,7 @@ const Base = ({ children }) => {
         <div className="base">
             <Header />
             <main>{children}</main>
+            <Chatbotmoveble />
             <Footer />
         </div>
     );
@@ -19,7 +22,6 @@ const Header = () => {
         const nav = document.querySelector("nav");
         const logo = document.querySelector(".logo");
         const prf = document.querySelector(".prf");
-        const search = document.querySelector(".search input");
 
         const handleBarClick = () => {
             bar.classList.toggle("active");
@@ -53,46 +55,9 @@ const Header = () => {
             }
         };
 
-        const handleSearch = (e) => {
-            if (e.key === "Enter") {
-                const searchQuery = e.target.value;
-                const pages = [
-                    "/",
-                    "/about",
-                    "/home",
-                    "/chatbot",
-                    "/privacy",
-                    "/help",
-                    "/services",
-                    "/business",
-                    "/technology",
-                ];
-                const promises = pages.map((page) => fetch(`${page}?query=${searchQuery}`));
-                Promise.all(promises).then((responses) => {
-                    const contents = responses.map((response) => response.text());
-                    const bestContent = contents.reduce((prev, curr) => {
-                        const prevScore = getScoreFromHtml(prev);
-                        const currScore = getScoreFromHtml(curr);
-                        return prevScore > currScore ? prev : curr;
-                    });
-                    window.location.href = `${pages[contents.indexOf(bestContent)]}?query=${searchQuery}`;
-                });
-            }
-        };
-
-        // search.addEventListener("keydown", handleSearch);
-
-        const getScoreFromHtml = (html) => {
-            const parser = new DOMParser();
-            const doc = parser.parseFromString(html, "text/html");
-            const text = doc.body.textContent;
-            const score = text.split(" ").filter((word) => word === searchQuery).length;
-            return score;
-        };
 
         return () => {
-            // bar.removeEventListener("click", handleBarClick);
-            // search.removeEventListener("keydown", handleSearch);
+            bar.removeEventListener("click", handleBarClick);
         };
     }, []);
     return (
@@ -121,12 +86,12 @@ const Header = () => {
                 </div>
             </nav> */}
             <nav className="navbar">
-                <div className="logo">Logo</div>
+                <div className="logo"><img src="src/assets/images/logo.png" alt=""></img></div>
                 <div className="d-flex flex-grow-1 mx-5 searchInput">
                     <input className="form-control me-1 inputBg" type="search" placeholder="Search..." />
                     <button className="btn btn-outline-light py-1" type="submit">Search</button>
                 </div>
-                <div className="nav">              
+                <div className="nav">
                     <ul>
                         <li>
                             <a onClick={() => window.location.href = "/"}>Home</a>
