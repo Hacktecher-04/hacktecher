@@ -29,7 +29,7 @@ const Home = () => {
         <Base>
             <div className="container-home">
                 <section className="view-1">
-                    {/* <img src="src/assets/images/docter.png" alt="" /> */}
+                    
                     <div className="text">
                         <h1>HEALTHWON</h1>
                         <p>Trusted care, healthier lives</p>
@@ -51,7 +51,7 @@ const Home = () => {
                             <h3>Patient</h3>
                         </div>
                         <div className="cont-3">
-                            <img src="src/assets/images/view-3-3.png" alt="" />
+                            <img src="https://plus.unsplash.com/premium_photo-1664476656040-20da3fd34fea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fHN0dWRlbnRzfGVufDB8fDB8fHww" alt="" />
                             <h3>Freshers & Students</h3>
                         </div>
                     </div>
@@ -61,8 +61,8 @@ const Home = () => {
                 <section className="view-2">
                     <div className="img img-1">
                         <div className="text">
-                            <h1>2</h1>
-                            <p></p>
+                            <h1>Medical Emergency</h1>
+                            <p>A medical emergency needs urgent care.</p>
                             <button>Get Started</button>
                         </div>
                     </div>
@@ -75,22 +75,22 @@ const Home = () => {
                     </div>
                     <div className="img img-3">
                         <div className="text">
-                            <h1>3</h1>
-                            <p></p>
+                            <h1>Freshers Docter</h1>
+                            <p>Start your medical career with confidence and compassion!</p>
                             <button>Get Started</button>
                         </div>
                     </div>
                     <div className="img img-4">
                         <div className="text">
-                            <h1>4</h1>
-                            <p></p>
+                            <h1>Digital Platform</h1>
+                            <p>A digital platform for seamless healthcare access.</p>
                             <button>Get Started</button>
                         </div>
                     </div>
                     <div className="img img-5">
                         <div className="text">
-                            <h1>5</h1>
-                            <p></p>
+                            <h1>Appointment</h1>
+                            <p>We can easily book an appointment anytime, on any date, with any doctor.</p>
                             <button>Get Started</button>
                         </div>
                     </div>

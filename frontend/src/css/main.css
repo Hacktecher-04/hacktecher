@@ -28,13 +28,17 @@ header {
   position: relative;
 }
 
-.navbar{
-  position: absolute;
+.navbar {
+  position: fixed;
   top: 0;
-  left: 0;
-  padding: 1rem;
-  
+  width: 100%;
+  background: #333;
+  flex-wrap : nowrap;
+  color: white;
+  padding: 10px;
+  z-index: 1000; /* Taaki dusre elements ke upar rahe */
 }
+
 
 nav {
   width: 100%;

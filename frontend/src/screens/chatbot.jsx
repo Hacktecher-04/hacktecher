@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import axios from "../config/axios";
-import Base from "../screens/Base";
 import "../css/chatbot.css";
 
 
@@ -32,7 +31,6 @@ const ChatBot = () => {
     };
 
     return (
-        <Base>
             <main>
                 <section className="view">
                     <div className="main" ref={mainRef}>
@@ -99,7 +97,6 @@ const ChatBot = () => {
                     </div>
                 </section>
             </main>
-        </Base>
     );
 };
 

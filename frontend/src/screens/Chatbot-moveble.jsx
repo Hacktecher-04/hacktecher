@@ -44,10 +44,10 @@ const Chatbotmoveble = () => {
               <div key={index} className={`chat-message ${msg.sender}`}>{msg.text}</div>
             ))}
           </div>
-          <div className="chat-footer d-flex">
+          <div className="chat-footer d-flex" style={{ position: "absolute", bottom: "2rem", right: "1rem", width: "90%" }}>
             <input
               type="text"
-              className="form-control"
+              className="form-control flex-end"
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder="Type a message..."

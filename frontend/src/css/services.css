@@ -35,12 +35,14 @@ body {
   line-height: 3rem;
   margin-bottom: 50px;
 }
+
 .hero h1 {
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
   margin-bottom: 1rem;
 }
+
 .hero p {
   font-size: 1.4rem;
   font-weight: 400;
@@ -53,22 +55,27 @@ body {
   flex-wrap: wrap;
   flex-direction: column-reverse;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   margin-bottom: 1rem;
   padding: 0 20px;
 }
+
 .view-service .text {
   flex: 1;
   padding: 20px;
   border-radius: 5px;
 }
+
 .view-service .image {
   flex: 1;
   max-width: 20rem;
 }
+
 .view-service .image img {
   width: 100%;
   border-radius: 5px;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (min-width: 728px) {
