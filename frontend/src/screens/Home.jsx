@@ -117,7 +117,7 @@ const Home = () => {
                     <div className="content">
                         <h1>For login</h1>
                         <p>Trusted care, healthier lives</p>
-                        <button>Login</button>
+                        <button onCLick={() => { window.location.href = "/login" }}>Login</button>
                     </div>
                 </section>
             </div>

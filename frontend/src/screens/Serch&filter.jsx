@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Table, Form, Container } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
 
 function SearchFilter() {
   const [records, setRecords] = useState([

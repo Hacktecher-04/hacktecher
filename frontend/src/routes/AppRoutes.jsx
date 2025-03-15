@@ -9,6 +9,9 @@ import Help from "../screens/Help";
 import Dashboard from "../screens/Dashboard";
 import Appointments from "../screens/Appointments";
 import Records from "../screens/Records";
+import Login from "../screens/Login";
+import SearchFilter from "../screens/Serch&filter";
+import DocumentPage from "../screens/Document";
 
 
 
@@ -27,6 +30,9 @@ function AppRoutes() {
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/appointments" element={<Appointments />} />
                 <Route path="/records" element={<Records />} />
+                <Route path="/login" element={<Login />} />
+                <Route path="/search" element={<SearchFilter />} />
+                <Route path="/docs" element={<DocumentPage />} />
             </Routes>
 
         </BrowserRouter>
